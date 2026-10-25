@@ -74,4 +74,7 @@ Developed as a student project.
 ## 📄 License
 
 This project is available for learning and educational purposes.
+<<<<<<< HEAD
 
+=======
+>>>>>>> e778c384f698f43512e2bf29d42079a036327294
