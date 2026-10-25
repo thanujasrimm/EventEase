@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EventEase | Discover Your Next Experience</title>
+  <meta name="description" content="Discover amazing events and explore your next experience with EventEase.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="logo">
+      <span class="logo-icon">✳</span> event<span class="logo-light">ease</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home" class="nav-active">Home</a>
+      <a href="#events">Explore Events</a>
+      <a href="#about">About Us</a>
+    </nav>
+
+    <a href="#events" class="nav-cta">Find your event <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="live-dot"></span>
+          YOUR NEXT EXPERIENCE AWAITS
+        </div>
+
+        <h1>
+          Life happens<br>
+          <span class="gradient-text">outside.</span>
+        </h1>
+
+        <p class="hero-description">
+          Find your people. Feel the moment. Discover events
+          that turn ordinary days into unforgettable memories.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#events" class="primary-btn">
+            Explore events <span>→</span>
+          </a>
+          <a href="#about" class="text-btn">Discover EventEase ↗</a>
+        </div>
+
+        <div class="hero-proof">
+          <div class="avatar-stack">
+            <span>🎵</span><span>🎨</span><span>💻</span>
+          </div>
+          <div>
+            <strong>Your kind of crowd.</strong>
+            <p>Music, ideas, art and everything in between.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=1000&q=85"
+            alt="Live concert with a crowd and stage lights">
+          <div class="image-shade"></div>
+
+          <div class="floating-label">
+            <span class="label-icon">✦</span>
+            <div>
+              <strong>Feel the energy</strong>
+              <p>Moments worth showing up for</p>
+            </div>
+          </div>
+
+          <div class="image-caption">
+            <span>THE NIGHT IS YOURS</span>
+            <h3>Make it memorable.</h3>
+          </div>
+        </div>
+
+        <div class="sparkle sparkle-one">✦</div>
+        <div class="sparkle sparkle-two">✧</div>
+      </div>
+
+      <a class="scroll-cue" href="#events">
+        <span></span> SCROLL TO EXPLORE
+      </a>
+    </section>
+
+    <section class="events-section" id="events">
+      <div class="section-top">
+        <div>
+          <p class="section-label">FIND YOUR NEXT FAVOURITE</p>
+          <h2>Events worth <span class="gradient-text">going out for.</span></h2>
+          <p class="section-description">
+            From unforgettable concerts to ideas that spark something new.
+          </p>
+        </div>
+        <span class="event-count" id="eventCount">03 EVENTS</span>
+      </div>
+
+      <div class="search-bar">
+        <span class="search-icon">⌕</span>
+        <input id="searchInput" type="search"
+          placeholder="Search events, experiences..."
+          aria-label="Search events">
+        <a href="#eventGrid" class="search-button" id="searchButton">Search ↗</a>
+      </div>
+
+      <div class="filter-row">
+        <div class="filter-list">
+          <button class="filter active" data-category="All">✦ All events</button>
+          <button class="filter" data-category="Music">♫ Music</button>
+          <button class="filter" data-category="Technology">⌘ Technology</button>
+          <button class="filter" data-category="Art">✿ Art & culture</button>
+        </div>
+        <span class="sort-note">HANDPICKED FOR YOU</span>
+      </div>
+
+      <div class="event-grid" id="eventGrid">
+
+        <article class="event-card" data-category="Music">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=85"
+              alt="Audience enjoying a live music festival">
+            <span class="category-tag">♫ MUSIC</span>
+            <button class="heart-button" aria-label="Save Indie Music Night">♡</button>
+            <div class="date-card"><strong>15</strong><span>NOV</span></div>
+          </div>
+          <div class="card-body">
+            <p class="event-location">⌖ CHENNAI, TAMIL NADU</p>
+            <h3>Indie Music Night</h3>
+            <p class="card-description">
+              Live music, electric energy and a night to remember.
+            </p>
+            <div class="card-bottom">
+              <div class="price">₹499 <span>/ person</span></div>
+              <button class="book-button" data-event="Indie Music Night"
+                data-price="499">Get tickets <span>↗</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card" data-category="Technology">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=900&q=85"
+              alt="Technology conference with attendees">
+            <span class="category-tag">⌘ TECHNOLOGY</span>
+            <button class="heart-button" aria-label="Save FutureTech Summit">♡</button>
+            <div class="date-card"><strong>22</strong><span>NOV</span></div>
+          </div>
+          <div class="card-body">
+            <p class="event-location">⌖ CHENNAI, TAMIL NADU</p>
+            <h3>FutureTech Summit</h3>
+            <p class="card-description">
+              Big ideas, artificial intelligence and future possibilities.
+            </p>
+            <div class="card-bottom">
+              <div class="price">₹799 <span>/ person</span></div>
+              <button class="book-button" data-event="FutureTech Summit"
+                data-price="799">Get tickets <span>↗</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card" data-category="Art">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=85"
+              alt="Creative arts event with colourful lighting">
+            <span class="category-tag">✿ ART & CULTURE</span>
+            <button class="heart-button" aria-label="Save Creative Arts Fest">♡</button>
+            <div class="date-card"><strong>29</strong><span>NOV</span></div>
+          </div>
+          <div class="card-body">
+            <p class="event-location">⌖ CHENNAI, TAMIL NADU</p>
+            <h3>Creative Arts Fest</h3>
+            <p class="card-description">
+              Explore art, meet creative minds and get inspired.
+            </p>
+            <div class="card-bottom">
+              <div class="price">₹299 <span>/ person</span></div>
+              <button class="book-button" data-event="Creative Arts Fest"
+                data-price="299">Get tickets <span>↗</span></button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="empty-message" id="emptyMessage" hidden>
+        No events found. Try another search or category.
+      </p>
+
+      <div class="bottom-note">
+        <span class="note-star">✳</span>
+        <p><strong>Your next great memory is waiting.</strong><br>
+          Find an event. Bring your people. Make it count.</p>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <p class="section-label">MORE THAN JUST TICKETS</p>
+      <h2>Go where the <span class="gradient-text">good things happen.</span></h2>
+      <p>
+        EventEase brings experiences closer to you.
+        Discover events, explore ticket options and find your next adventure.
+      </p>
+      <a href="#events" class="primary-btn">Find your next event →</a>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#home" class="logo">
+      <span class="logo-icon">✳</span> event<span class="logo-light">ease</span>
+    </a>
+    <p>© 2026 EventEase · Student project prototype</p>
+    <a href="#home" class="footer-link">Made for memorable moments ✦</a>
+  </footer>
+
+  <div class="modal" id="bookingModal" hidden>
+    <div class="modal-content">
+      <button class="close-button" id="closeModal" aria-label="Close">×</button>
+      <span class="modal-symbol">✳</span>
+      <p class="section-label">YOUR NEXT EXPERIENCE</p>
+      <h2 id="modalEventName">Event name</h2>
+      <p class="modal-copy">Starting ticket price</p>
+      <div class="modal-price" id="modalPrice">₹499</div>
+      <div class="demo-notice">
+        <strong>Almost there!</strong>
+        <p>This is a visual demo. Real ticket holds and payments will be connected later.</p>
+      </div>
+      <button class="primary-btn modal-continue" id="confirmDemo">
+        Continue <span>→</span>
+      </button>
+      <p id="demoMessage" class="demo-message" role="status"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
